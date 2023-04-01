@@ -6,7 +6,11 @@ import {changeColor,changeStyle } from '../actions/index.js';
 const App = () => {
 
 const dispatch =useDispatch();
+
 //code here 
+const colorState = useSelector((state)=>state.colorReducer);
+const styleState = useSelector((state)=>state.styleReducer);
+
 
   return (
     <div id="main">
